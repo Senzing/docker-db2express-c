@@ -15,6 +15,7 @@ was modified to support non-root ownership of
 
 1. [Create Docker container](#create-docker-container)
 1. [Run Docker container](#run-docker-container)
+1. [More information](#more-information)
 
 ## Create docker container
 
@@ -44,8 +45,9 @@ docker build --tag senzing/db2express-c https://github.com/senzing/docker-db2exp
 
 1. Option #2 - Run the docker container with volumes.
 
-   Identify the path on local system where the database files are stored.
-   Default: "/storage/docker/senzing/docker-compose-db2-demo"
+   Identify the path on local system where the database files are to be stored.
+   Default: `/storage/docker/senzing/docker-compose-db2-demo`.
+   Example:
 
     ```console
     export DB2_STORAGE=/storage/docker/senzing/docker-compose-db2-demo
@@ -83,3 +85,6 @@ docker build --tag senzing/db2express-c https://github.com/senzing/docker-db2exp
       --env LICENSE="accept" \
       senzing/db2express-c
     ```
+## More information
+
+1. Visit [ibmcom/db2express-c](https://hub.docker.com/r/ibmcom/db2express-c/) on hub.docker.com for more information.
