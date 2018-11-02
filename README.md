@@ -25,7 +25,7 @@ docker build --tag senzing/db2express-c https://github.com/senzing/docker-db2exp
 
 ## Run Docker container
 
-1. Option #1 - Run the docker container without volumes or network.
+1. **Option #1** - Run the docker container without volumes or network.
 
    Identify the `db2inst1` user's password.
    Example:
@@ -43,7 +43,7 @@ docker build --tag senzing/db2express-c https://github.com/senzing/docker-db2exp
       senzing/db2express-c
     ```
 
-1. Option #2 - Run the docker container with volumes.
+1. **Option #2** - Run the docker container with volumes.
 
    Identify the path on local system where the database files are to be stored.
    Default: `/storage/docker/senzing/docker-compose-db2-demo`.
@@ -63,7 +63,7 @@ docker build --tag senzing/db2express-c https://github.com/senzing/docker-db2exp
       senzing/db2express-c
     ```
 
-1. Option #3 - Run the docker container in a docker network.
+1. **Option #3** - Run the docker container in a docker network.
 
    Identify the Docker network of the DB2 database.
    Example:
@@ -85,6 +85,7 @@ docker build --tag senzing/db2express-c https://github.com/senzing/docker-db2exp
       --env LICENSE="accept" \
       senzing/db2express-c
     ```
+
 ## More information
 
 1. Visit [ibmcom/db2express-c](https://hub.docker.com/r/ibmcom/db2express-c/) on hub.docker.com for more information.
