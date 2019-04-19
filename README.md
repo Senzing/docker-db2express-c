@@ -20,7 +20,7 @@ was modified to support non-root ownership of
 ## Create docker container
 
 ```console
-docker build --tag senzing/db2express-c https://github.com/senzing/docker-db2express-c.git
+sudo docker build --tag senzing/db2express-c https://github.com/senzing/docker-db2express-c.git
 ```
 
 ## Run Docker container
@@ -37,7 +37,7 @@ docker build --tag senzing/db2express-c https://github.com/senzing/docker-db2exp
     Run docker container.
 
     ```console
-    docker run -it  \
+    sudo docker run -it  \
       --env DB2INST1_PASSWORD=${DB2INST1_PASSWORD} \
       --env LICENSE="accept" \
       senzing/db2express-c
@@ -56,7 +56,7 @@ docker build --tag senzing/db2express-c https://github.com/senzing/docker-db2exp
     Run docker container.
 
     ```console
-    docker run -it  \
+    sudo docker run -it  \
       --volume ${DB2_STORAGE}:/home/db2inst1/db2inst1 \
       --env DB2INST1_PASSWORD=${DB2INST1_PASSWORD} \
       --env LICENSE="accept" \
@@ -69,7 +69,7 @@ docker build --tag senzing/db2express-c https://github.com/senzing/docker-db2exp
    Example:
 
     ```console
-    docker network ls
+    sudo docker network ls
 
     # Choose value from NAME column of docker network ls
     export DB2_NETWORK=nameofthe_network
@@ -78,7 +78,7 @@ docker build --tag senzing/db2express-c https://github.com/senzing/docker-db2exp
     Run docker container.
 
     ```console
-    docker run -it  \
+    sudo docker run -it  \
       --volume ${DB2_STORAGE}:/home/db2inst1/db2inst1 \
       --net ${DB2_NETWORK} \
       --env DB2INST1_PASSWORD=${DB2INST1_PASSWORD} \
