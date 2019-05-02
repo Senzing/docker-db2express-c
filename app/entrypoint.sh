@@ -43,7 +43,7 @@ if [ "${LICENSE}" != "accept" ];then
    exit 1
 fi
 
-chown -R db2inst1:db2inst1 /home/db2inst1/db2inst1
+chown -R db2inst1:db2inst1 /home/db2inst1/db2inst1 || true
 
 if [[ $1 = "db2start" ]]; then
   su - db2inst1 -c "db2start"
