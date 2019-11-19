@@ -1,5 +1,12 @@
 # docker-db2express-c
 
+## :no_entry: Deprecated
+
+This repository is deprecated and has been replaced by
+[docker-ibm-db2](https://github.com/Senzing/docker-ibm-db2).
+
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 ## Overview
 
 This Dockerfile inherits from
